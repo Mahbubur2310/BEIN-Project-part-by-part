@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+
+    <title>Invoice</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin-top: 20px;
+        color: #000000;
+      }
+      .text-secondary-d1 {
+        color: #5d636b !important;
+      }
+      .page-header {
+        margin: 0 0 1rem;
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        border-bottom: 1px dotted #e2e2e2;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-align: center;
+        align-items: center;
+      }
+      .page-title {
+        padding: 0;
+        margin: 0;
+        font-size: 1.75rem;
+        font-weight: 300;
+      }
+      .brc-default-l1 {
+        border-color: #dce9f0 !important;
+      }
+
+      .ml-n1,
+      .mx-n1 {
+        margin-left: -0.25rem !important;
+      }
+      .mr-n1,
+      .mx-n1 {
+        margin-right: -0.25rem !important;
+      }
+      .mb-4,
+      .my-4 {
+        margin-bottom: 1.5rem !important;
+      }
+
+      hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .text-grey-m2 {
+        color: #888a8d !important;
+      }
+
+      .text-success-m2 {
+        color: #86bd68 !important;
+      }
+
+      .font-bolder,
+      .text-600 {
+        font-weight: 600 !important;
+      }
+
+      .text-110 {
+        font-size: 110% !important;
+      }
+      .text-blue {
+        color: #478fcc !important;
+      }
+      .pb-25,
+      .py-25 {
+        padding-bottom: 0.75rem !important;
+      }
+
+      .pt-25,
+      .py-25 {
+        padding-top: 0.75rem !important;
+      }
+      .bgc-default-tp1 {
+        background-color: rgba(121, 169, 197, 0.92) !important;
+      }
+      .bgc-default-l4,
+      .bgc-h-default-l4:hover {
+        background-color: #f3f8fa !important;
+      }
+      .page-header .page-tools {
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+      }
+
+      .btn-light {
+        color: #757984;
+        background-color: #f5f6f9;
+        border-color: #dddfe4;
+      }
+      .w-2 {
+        width: 1rem;
+      }
+
+      .text-120 {
+        font-size: 120% !important;
+      }
+      .text-primary-m1 {
+        color: #4087d4 !important;
+      }
+
+      .text-danger-m1 {
+        color: #dd4949 !important;
+      }
+      .text-blue-m2 {
+        color: #68a3d5 !important;
+      }
+      .text-150 {
+        font-size: 150% !important;
+      }
+      .text-60 {
+        font-size: 60% !important;
+      }
+      .text-grey-m1 {
+        color: #7b7d81 !important;
+      }
+      .align-bottom {
+        vertical-align: bottom !important;
+      }
+      input {
+        border: none;
+        outline: none;
+        width: 100%;
+      }
+      .table-bordered,
+      .table-bordered td,
+      .table-bordered th {
+        border: 1px solid #515253;
+      }
+      .table-bordered {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-content container">
+      <div class="page-header text-blue-d2">
+          <h1 class="page-title text-secondary-d1">
+              Invoice No:
+              <small class="page-info">
+                  #111-222
+              </small>
+          </h1>
+  
+          <div class="page-tools">
+              <div class="action-buttons">
+                  <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="Print">
+                      <i class="mr-1 fa fa-print text-primary-m1 text-120 w-2"></i>
+                      Print
+                  </a>
+                  <a class="btn bg-white btn-light mx-1px text-95" href="#" data-title="PDF">
+                      <i class="mr-1 fa fa-file-pdf-o text-danger-m1 text-120 w-2"></i>
+                      Export
+                  </a>
+              </div>
+          </div>
+      </div>
+  
+      <div class="container px-0">
+          <div class="row mt-4">
+              <div class="col-12 col-lg-10 offset-lg-1">
+                  <div class="row">
+                      <div class="col-12">
+                          <div class="text-center text-150">
+                              <span class="text-default-d3" style="background: red; color:#fff; font-weight: bold; display: inline-block;width: 70px;">BEIN</span>
+                          </div>
+                          <div class="text-center">
+                              <h4 style="font-weight: bold; margin:0px;">BEIN Limited (Proposed)</h4>
+                              <p style="color: #000000; margin:0px;">For Mirpur Club Members, Family and Friends</p>
+                          </div>
+                          <div class="text-center">
+                              <h5 style="font-weight: bold; margin:0px;">Mirpur Professionals and Entrepreneurs Ltd</h5>
+                              <p style="color: #000000; margin:0px; font-weight: 500;">MRO: 01323148188; 01788489340; 01744819940</p>
+                          </div>
+
+                          <div class="text-center">
+                              <h5 style="font-weight: bold; margin:0px;">Cash Voucher (Customer Copy)</h5>
+                          </div>
+                      </div>
+                  </div>
+                  <!-- .row -->
+                  
+  
+                  <hr class="row brc-default-l1 mx-n1 mb-4" />
+                  <div class="table-responsive table-bordered">
+                      <table class="table table-borderless border-0 border-b-2 brc-default-l1">
+                          <tbody>
+                              <tr>
+                                  <th class="opacity-2">Order No:</th>
+                                  <td><input type="text" style="width: 100%;"></td>
+                                  <th class="opacity-2">Date:</th>
+                                  <td><input type="text" placeholder="dd-mm-yyyy" style="width: 100%;"></td>
+                              </tr>
+                              <tr>
+                                  <th class="opacity-2">Name:</th>
+                                  <td><input type="text" style="width: 100%;"></td>
+                                  <th class="opacity-2">M Code:</th>
+                                  <td><input type="text" style="width: 100%;"></td>
+                              </tr>
+                              <tr>
+                                  <th class="opacity-2">Address:</th>
+                                  <td colspan="3"><input type="text" style="width: 100%;"></td>
+                              </tr>
+                              <tr>
+                                  <th class="opacity-2">Mobile No:</th>
+                                  <td><input type="number" style="width: 100%;"></td>
+                                  <th class="opacity-2">Email:</th>
+                                  <td><input type="email" style="width: 100%;"></td>
+                              </tr>
+                          </tbody>
+
+                      </table>
+                  </div>
+  
+                 
+                      <!-- or use a table instead -->
+                      
+                      <div class="table-responsive table-bordered">
+                          <table class="table table-borderless border-0 border-b-2 brc-default-l1">
+                              <thead class="bg-none bgc-default-tp1">
+                                  <tr class="text-white">
+                                      <th class="opacity-2">SL</th>
+                                      <th>Product & Services</th>
+                                      <th>Qty</th>
+                                      <th>Unit Price</th>
+                                      <th width="140">Total</th>
+                                  </tr>
+                              </thead>
+          
+                              <tbody class="text-95 text-secondary-d3">
+                                  <tr>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td><input type="text" style="width: 350px;"></td>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td class="text-95"><input type="text" style="width: 70px;"></td>
+                                      <td class="text-secondary-d2"><input type="text" style="width: 70px;"></td>
+                                  </tr> 
+                                  <tr>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td><input type="text" style="width: 350px;"></td>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td class="text-95"><input type="text" style="width: 70px;"></td>
+                                      <td class="text-secondary-d2"><input type="text" style="width: 70px;"></td>
+                                  </tr> 
+                                  <tr>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td><input type="text" style="width: 350px;"></td>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td class="text-95"><input type="text" style="width: 70px;"></td>
+                                      <td class="text-secondary-d2"><input type="text" style="width: 70px;"></td>
+                                  </tr>
+                                  <tr>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td><input type="text" style="width: 350px;"></td>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td class="text-95"><input type="text" style="width: 70px;"></td>
+                                      <td class="text-secondary-d2"><input type="text" style="width: 70px;"></td>
+                                  </tr>
+                                  <tr>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td><input type="text" style="width: 350px;"></td>
+                                      <td><input type="text" style="width: 50px;"></td>
+                                      <td class="text-95"><input type="text" style="width: 70px;"></td>
+                                      <td class="text-secondary-d2"><input type="text" style="width: 70px;"></td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+  
+                      <div class="row mt-3">
+                          <div class="col-12 col-sm-7 text-grey-d2 text-95 mt-2 mt-lg-0">
+                              Prepared By: <input type="text" style="width: 350px;">
+                             <br><br> Delivered By: <input type="text" style="width: 350px;">
+                          </div>
+  
+                          <div class="col-12 col-sm-5 text-grey text-90 order-first order-sm-last">
+                              <div class="row my-2">
+                                  <div class="col-7 text-right">
+                                  Total:
+                                  </div>
+                                  <div class="col-5">
+                                      <span class="text-120 text-secondary-d1"><input type="text" style="width: 80px;">TK</span>
+                                  </div>
+                              </div>
+                              <div class="row my-2">
+                                  <div class="col-7 text-right">
+                                  Sub Total
+                                  </div>
+                                  <div class="col-5">
+                                      <span class="text-120 text-secondary-d1"><input type="text" style="width: 80px;">TK</span>
+                                  </div>
+                              </div>
+  
+                              <div class="row my-2">
+                                  <div class="col-7 text-right">
+                                      Tax (10%)
+                                  </div>
+                                  <div class="col-5">
+                                      <span class="text-110 text-secondary-d1"><input type="text" style="width: 80px;">TK</span>
+                                  </div>
+                              </div>
+  
+                              <div class="row my-2 align-items-center bgc-primary-l3 p-2">
+                                  <div class="col-7 text-right">
+                                      Total Amount
+                                  </div>
+                                  <div class="col-5">
+                                      <span class="text-150 text-success-d3 opacity-2"><input type="text" style="width: 80px;">TK</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+  
+                      <hr />
+  
+                      <div>
+                          <span class="text-secondary-d1 text-105">Thank you for your business</span>
+                          <a href="#" class="btn btn-info btn-bold px-4 float-right mt-3 mt-lg-0 mb-2">Pay Now</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
