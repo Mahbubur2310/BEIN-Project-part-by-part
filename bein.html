@@ -155,7 +155,7 @@
       .table-bordered th {
         border: 1px solid #515253;
       }
-	  .table-bordered {
+      .table-bordered {
         border: none;
       }
     </style>
@@ -187,87 +187,97 @@
             <hr class="row brc-default-l1 mx-n1 mb-4" />
 
             <div class="row">
-              <div class="col-md-6 mb-2">
-                <span>Consumer Type:</span>
-                <select
-                  class="custom-select"
-                  style="display: inline-block; width: 150px"
-                >
-                  <option selected>Select Consumer</option>
-                  <option value="1">Associate</option>
-                  <option value="2">Non Associate</option>
-                </select>
+              <div class="col-md-6">
+                <div class="col-md-12 mb-2">
+                  <span>Consumer Type:</span>
+                  <select
+                    class="custom-select"
+                    style="display: inline-block; width: 150px"
+                  >
+                    <option selected>Select Consumer</option>
+                    <option value="1">Associate</option>
+                    <option value="2">Non Associate</option>
+                  </select>
+                </div>
+                <div class="col-md-12 mb-2">
+                  <span>Sale Amount</span>
+                  <input type="number" style="width: 80px" /> To
+                  <input type="number" style="width: 80px" />
+                </div>
+                <div class="col-md-12 mb-2">
+                  <span>Dues Amount</span>
+                  <input type="number" style="width: 80px" /> To
+                  <input type="number" style="width: 80px" />
+                </div>
               </div>
-              <div class="col-md-6 mb-2">
-                <span class="mr-5">Status:</span>
-                <input type="text" />
-              </div>
-              <div class="col-md-6 mb-2">
-                <span>Sale Amount</span>
-                <input type="number" style="width: 80px" /> To
-                <input type="number" style="width: 80px" />
-              </div>
-              <div class="col-md-3 mb-2">
-                <span class="mr-1">Zone:</span>
 
-                <select
-                  class="custom-select"
-                  style="display: inline-block; width: 120px"
-                >
-                  <option selected>Select</option>
-                  <option value="1">Dhanmondi</option>
-                  <option value="2">Mirpur</option>
-                </select>
-              </div>
-              <div class="col-md-3 mb-2" style="margin-left: -60px">
-                <span class="mr-1">Area:</span>
+              <div class="col-md-6">
+                <div class="float-right">
+                  <div class="col-md-12 mb-2">
+                    <span class="mr-2">Status:</span>
+                    <input type="text" />
+                  </div>
+                </div>
 
-                <select
-                  class="custom-select"
-                  style="display: inline-block; width: 120px"
-                >
-                  <option selected>Select</option>
-                  <option value="1">Dhanmondi-27</option>
-                  <option value="2">Kazipara</option>
-                </select>
-              </div>
-              <div class="col-md-6 mb-2">
-                <span>Dues Amount</span>
-                <input type="number" style="width: 80px" /> To
-                <input type="number" style="width: 80px" />
-              </div>
-              <div class="col-md-3 mb-2">
-                <span class="mr-1">Category:</span>
+                <div class="float-right">
+                  <div class="col-md-12 mb-2">
+                    <span class="mr-1">Zone:</span>
 
-                <select
-                  class="custom-select"
-                  style="display: inline-block; width: 120px"
-                >
-                  <option selected>Select</option>
-                  <option value="1">Meet</option>
-                  <option value="2">Oil</option>
-                </select>
-              </div>
-              <div class="col-md-3 mb-2" style="margin-left: -30px">
-                <span class="mr-1">Item:</span>
+                    <select
+                      class="custom-select"
+                      style="display: inline-block; width: 120px"
+                    >
+                      <option selected>Select</option>
+                      <option value="1">Dhanmondi</option>
+                      <option value="2">Mirpur</option>
+                    </select>
 
-                <select
-                  class="custom-select"
-                  style="display: inline-block; width: 120px"
-                >
-                  <option selected>Select</option>
-                  <option value="1">Beef</option>
-                  <option value="2">Mutton</option>
-                  <option value="2">Soyabin Oil</option>
-                  <option value="2">Sorisa Oil</option>
-                  <option value="2">Olive Oil</option>
-                </select>
+                    <span class="mr-1">Area:</span>
+
+                    <select
+                      class="custom-select"
+                      style="display: inline-block; width: 120px"
+                    >
+                      <option selected>Select</option>
+                      <option value="1">Dhanmondi-27</option>
+                      <option value="2">Kazipara</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="float-right">
+                  <div class="col-md-12 mb-2">
+                    <span class="mr-1">Category:</span>
+
+                    <select
+                      class="custom-select"
+                      style="display: inline-block; width: 120px"
+                    >
+                      <option selected>Select</option>
+                      <option value="1">Meet</option>
+                      <option value="2">Oil</option>
+                    </select>
+                    <span class="mr-1">Item:</span>
+
+                    <select
+                      class="custom-select"
+                      style="display: inline-block; width: 120px"
+                    >
+                      <option selected>Select</option>
+                      <option value="1">Beef</option>
+                      <option value="2">Mutton</option>
+                      <option value="2">Soyabin Oil</option>
+                      <option value="2">Sorisa Oil</option>
+                      <option value="2">Olive Oil</option>
+                    </select>
+                  </div>
+                </div>
               </div>
             </div>
 
             <!-- or use a table instead -->
             <div class="row">
-              <div class="col-md-9">
+              <div class="col-md-12">
                 <div class="table-responsive table-bordered">
                   <table
                     class="
@@ -303,6 +313,14 @@
                         </td>
                         <td>
                           <a href="" class="btn btn-success btn-sm">Order</a>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-sm"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                          >
+                            Comment
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -319,6 +337,14 @@
                         </td>
                         <td>
                           <a href="" class="btn btn-success btn-sm">Order</a>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-sm"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                          >
+                            Comment
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -335,6 +361,14 @@
                         </td>
                         <td>
                           <a href="" class="btn btn-success btn-sm">Order</a>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-sm"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                          >
+                            Comment
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -351,6 +385,14 @@
                         </td>
                         <td>
                           <a href="" class="btn btn-success btn-sm">Order</a>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-sm"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                          >
+                            Comment
+                          </button>
                         </td>
                       </tr>
                       <tr>
@@ -367,13 +409,64 @@
                         </td>
                         <td>
                           <a href="" class="btn btn-success btn-sm">Order</a>
+                          <button
+                            type="button"
+                            class="btn btn-primary btn-sm"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                          >
+                            Comment
+                          </button>
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
               </div>
-              <div class="col-md-3">
+
+              <!-- Modal -->
+
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Comment History
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Best Product
+                      <hr />
+                      Product Valona
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-md-3">
                 <div class="card">
                   <div class="card-header">
                     <h5 class="card-title text-center">History</h5>
@@ -382,7 +475,7 @@
                     <h6 class="card-subtitle mb-2 text-muted">History</h6>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <hr class="row brc-default-l1 mx-n1 mb-4" />
             <button class="btn btn-primary float-right my-2">Save</button>
